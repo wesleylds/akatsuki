@@ -1,0 +1,372 @@
+/* Estilos globais para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #990000;
+}
+
+/* Estilos para o cabeçalho */
+#cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    z-index: 999;
+}
+
+/* Estilos para a imagem da logo */
+#logo img {
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 5px;
+    position: relative;
+  
+}
+
+h1 {
+    margin-right: 500px;
+    
+}
+#cabecalho h1 {
+    margin-right: 500px;
+    
+}
+
+/* Estilos para o menu */
+#menu {
+    display: flex;
+}
+
+/* Estilos para os links no cabeçalho */
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+/* Estilos para a capa da Akatsuki */
+.capa-akatsuki {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para o título h2 */
+h2 {
+    font-size: 32px;
+    padding: 2px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para parágrafos */
+p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Estilos para listas */
+ul {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Estilos para o rodapé */
+#rodape {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para os links no conteúdo principal */
+#principal a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#principal {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+/* Estilos para os links no conteúdo principal ao passar o mouse */
+#principal a:hover {
+    color: rgb(246, 250, 40);
+}
+
+/* Estilos para o submenu */
+#submenu {
+    display: flex;
+    position: fixed;
+    background: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    right: 60px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Estilos para os itens do submenu */
+#submenu ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para os links no submenu */
+#submenu ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Estilos para exibir o submenu ao passar o mouse */
+#menu a:hover+#submenu,
+#submenu:hover {
+    display: block;
+}
+
+/* Estilos para links no submenu ao passar o mouse */
+#submenu a:hover {
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 600px) {
+
+    /* Estilos para o cabeçalho em telas menores */
+    #cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    /* Estilos para a imagem da logo em telas menores */
+    #logo img {
+        width: 80px;
+    }
+
+    /* Estilos para os links no cabeçalho em telas menores */
+    #menu a {
+        margin-right: 10px;
+    }
+
+    /* Estilos para a capa da Akatsuki em telas menores */
+    .capa-akatsuki {
+        padding: 10px;
+    }
+
+    /* Estilos para o título h2 em telas menores */
+    h2 {
+        font-size: 24px;
+    }
+
+    /* Estilos para parágrafos em telas menores */
+    p {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    /* Estilos para listas em telas menores */
+    ul {
+        width: 80%;
+        font-size: 16px;
+    }
+}
+
+/* Estilos para a seção de título */
+.titulo {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o conteúdo de um integrante */
+.integrante-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para a imagem de um integrante */
+.integrante-image img {
+    margin-top: 20px;
+    max-width: 350px;
+    height: 650px;
+    margin-right: 20px;
+}
+
+/* Estilos para a descrição de um integrante */
+.integrante-description {
+    overflow: hidden;
+}
+
+/* Estilos para o título h3 na descrição de um integrante */
+.integrante-description h3 {
+    padding: 4px;
+    /* h3 obito */
+    color: #fcf700;
+}
+
+/* Estilos para parágrafos na descrição de um integrante */
+.integrante-description p {
+    margin: 5px;
+}
+
+/* Estilos para o título h2 na descrição de um integrante */
+.integrante-description h2 {
+    margin: 30px;
+    margin-right: 300px;
+    padding: 10px;
+    background: black;
+    border: white 2px solid;
+    border-radius: 5px;
+    width: 250px;
+}
+
+/* Estilos ao passar o mouse sobre o título h2 na descrição de um integrante */
+.integrante-description h2:hover {
+    color: #990000;
+    background: white;
+    border: #000000 3px solid;
+}
+
+/* Estilos para o grid de personagens */
+#personagens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para cada conteúdo de personagem */
+.personagem-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para a imagem de um personagem */
+.personagem-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a descrição de um personagem */
+.personagem-description {
+    text-align: center;
+}
+
+/* Estilos para os links dos personagens */
+#personagens-grid a {
+    text-decoration: none;
+    color: #990000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #fff6f6 10px groove;
+    padding: 2px;
+    background-color: #000000;
+}
+
+/* Estilos para a lista de personagens */
+.personagens-lista {
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 220px;
+    align-items: center;
+}
+
+/* Estilos para cada item da lista de personagens */
+.personagens-lista li {
+    text-align: center;
+}
+
+/* Estilos para os links na lista de personagens */
+.personagens-lista a {
+    text-decoration: none;
+    color: #990000;
+    display: block;
+    padding: 5px;
+    border: #fff6f6 10px groove;
+    background-color: #000000;
+}
+
+/* Estilos para a classe clear */
+.clear {
+    clear: both;
+}
+
+/* Estilos para o rodapé */
+#rodape {
+    color: white;
+}
+
+/* Estilos para a seção de música */
+.musica {
+    float: right;
+    margin-right: 400px;
+    padding: 20px;
+}
+
+/* Estilos para o título da música */
+.titulo-musica {
+    text-align: center;
+    padding: 1px;
+}
+
+/* Estilos para a imagem de um personagem */
+.personagem-img {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Estilos para os links dos personagens no grid */
+#personagens-grid a {
+    text-decoration: none;
+    color: #990000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #fff6f6 10px groove;
+    padding: 2px;
+    background-color: #000000;
+}
+
+/* Estilos para o título da Akatsuki */
+.titulo-akatsuki {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 32px;
+}
+
+/* Estilos para a imagem na descrição de um integrante */
+.integrante-description img {
+    width: 150px;
+    float: right;
+    margin-left: 10px;
+    /* Margem para separar a imagem do texto */
+}
